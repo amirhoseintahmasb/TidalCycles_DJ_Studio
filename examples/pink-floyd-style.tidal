@@ -1,0 +1,15 @@
+-- DRONE / PAD layer (space)
+d4 $ slow 2 $ sound "pad" # room 0.9 # size 0.9 # gain 0.5
+
+-- PULSE (like a heartbeat kick)
+d1 $ sound "bd ~ bd ~" # room 0.3 # size 0.6
+
+-- SNARE (sparse)
+d2 $ sound "~ sn ~ sn" # room 0.5 # size 0.7 # gain 0.9
+
+-- HATS (motion)
+d3 $ sound "hh*8" # gain 0.5 # cut 6000
+
+-- Slowly open the filter on hats every 8 cycles
+d3 $ every 8 (# cut 12000) $ sound "hh*8" # gain 0.5 # cut 4000
+

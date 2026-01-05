@@ -1,0 +1,27 @@
+-- Multiple Melody Patterns for Live Coding
+-- Copy-paste these into your Tidal REPL one at a time
+
+-- Melody 1: Simple ascending
+d1 $ sound "arpy:4 arpy:7 arpy:9 arpy:12" # room 0.4 # gain 0.8
+
+-- Melody 2: Descending pattern
+d1 $ sound "arpy:12 arpy:9 arpy:7 arpy:4" # room 0.4
+
+-- Melody 3: Arpeggio
+d1 $ sound "arpy:4 arpy:7 arpy:9 arpy:7 arpy:12 arpy:9" # room 0.5
+
+-- Melody 4: With variation
+d1 $ every 4 (rev) $ sound "arpy:4 arpy:7 arpy:9 arpy:12 arpy:9 arpy:7" # room 0.6
+
+-- Melody 5: Fast arpeggio
+d1 $ fast 2 $ sound "arpy:4 arpy:7 arpy:9 arpy:12" # room 0.4
+
+-- Melody 6: Slow and spacey
+d1 $ slow 2 $ sound "arpy:4 arpy:7 arpy:9" # room 0.8 # size 0.8
+
+-- Melody 7: With panning
+d1 $ sound "arpy:4 arpy:7 arpy:9 arpy:7" # pan (slow 2 $ sine) # room 0.5
+
+-- Melody 8: Complex pattern
+d1 $ sound "arpy:4 arpy:7 arpy:9 arpy:12 arpy:9 arpy:7 arpy:4 arpy:7" # room 0.6
+

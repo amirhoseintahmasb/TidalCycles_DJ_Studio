@@ -1,0 +1,9 @@
+-- basic groove
+d1 $ sound "bd bd [sn sn] bd"
+
+-- hats
+d2 $ sound "hh*8" # gain 0.7
+
+-- little variation every 4 cycles
+d1 $ every 4 (rev) $ sound "bd bd [sn sn] bd"
+
