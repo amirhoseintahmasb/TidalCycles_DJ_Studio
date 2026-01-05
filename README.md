@@ -4,10 +4,6 @@
 
 A powerful web-based DJ interface for **TidalCycles** live coding music. Control TidalCycles through an intuitive UI with instruments, pattern builders, real-time effects, and audio recording.
 
-### 🎬 Quick Demo
-
-![Demo](images/demo.gif)
-
 ### 📺 Full Tutorial
 
 ![Full Guide](images/demo-full.gif)
